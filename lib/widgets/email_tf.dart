@@ -3,7 +3,6 @@ import 'package:trionoma/utilities/constants.dart';
 
 Widget buildEmailTF(BuildContext context) {
   var _screenHeight = MediaQuery.of(context).size.height;
-  var _screenWidth = MediaQuery.of(context).size.width;
 
   return Column(
     crossAxisAlignment: CrossAxisAlignment.start,

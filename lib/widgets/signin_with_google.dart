@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 Widget buildGoogleIcon(BuildContext context, Function onTap, AssetImage logo) {
   var _screenHeight = MediaQuery.of(context).size.height;
   var _screenWidth = MediaQuery.of(context).size.width;
-  var _screenSize = MediaQuery.of(context).devicePixelRatio;
 
   return Container(
     height: _screenHeight * 0.10,

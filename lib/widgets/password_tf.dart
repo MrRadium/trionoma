@@ -3,7 +3,7 @@ import 'package:trionoma/utilities/constants.dart';
 
 Widget buildPasswordTF(BuildContext context) {
   var _screenHeight = MediaQuery.of(context).size.height;
-  var _screenWidth = MediaQuery.of(context).size.width;
+
   return Column(
     crossAxisAlignment: CrossAxisAlignment.start,
     children: <Widget>[
