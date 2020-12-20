@@ -1,12 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:trionoma/pages/sign-in/widgets/email_tf.dart';
-import 'package:trionoma/pages/sign-in/widgets/forget_password_btn.dart';
-import 'package:trionoma/pages/sign-in/widgets/password_tf.dart';
-import 'package:trionoma/pages/sign-in/widgets/signin_btn.dart';
-import 'package:trionoma/pages/sign-in/utilities/constants.dart';
-import 'package:trionoma/pages/sign-in/widgets/signin_with_google.dart';
-import 'package:trionoma/pages/sign-in/widgets/signup_btn.dart';
+import 'package:trionoma/widgets/email_tf.dart';
+import 'package:trionoma/widgets/forget_password_btn.dart';
+import 'package:trionoma/widgets/password_tf.dart';
+import 'package:trionoma/widgets/register_btn.dart';
+import 'package:trionoma/widgets/signin_btn.dart';
+import 'package:trionoma/widgets/signin_with_google.dart';
 
 class SignIn extends StatelessWidget {
   @override

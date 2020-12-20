@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:trionoma/pages/sign-in/utilities/constants.dart';
+import 'package:trionoma/utilities/constants.dart';
 
 Widget buildEmailTF(BuildContext context) {
   var _screenHeight = MediaQuery.of(context).size.height;

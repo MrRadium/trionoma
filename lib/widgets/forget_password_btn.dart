@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:trionoma/pages/sign-in/utilities/constants.dart';
+import 'package:trionoma/utilities/constants.dart';
 
 Widget buildForgotPasswordBtn() {
   return Container(
