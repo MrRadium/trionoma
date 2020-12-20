@@ -65,7 +65,7 @@ class SignIn extends StatelessWidget {
                       buildForgotPasswordBtn(),
                       buildSignInBtn(context),
                       buildSignInWithGoogle(context),
-                      SizedBox(height: _screenHeight * 0.045),
+                      SizedBox(height: _screenHeight * 0.04),
                       buildSignupBtn(context),
                     ],
                   ),
