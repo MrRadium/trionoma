@@ -15,7 +15,7 @@ Widget buildPasswordTF(BuildContext context) {
       Container(
         alignment: Alignment.centerLeft,
         decoration: kBoxDecorationStyle,
-        height: 60.0, //_screenHeight * 0.09,
+        height: _screenHeight * 0.09,
         child: TextField(
           obscureText: true,
           style: TextStyle(
@@ -24,7 +24,7 @@ Widget buildPasswordTF(BuildContext context) {
           ),
           decoration: InputDecoration(
             border: InputBorder.none,
-            contentPadding: EdgeInsets.only(top: 14.0),
+            contentPadding: EdgeInsets.only(top: _screenHeight * 0.023),
             prefixIcon: Icon(
               Icons.lock,
               color: Colors.white,

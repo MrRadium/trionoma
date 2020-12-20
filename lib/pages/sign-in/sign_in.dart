@@ -11,6 +11,9 @@ import 'package:trionoma/pages/sign-in/widgets/signup_btn.dart';
 class SignIn extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    var _screenHeight = MediaQuery.of(context).size.height;
+    var _screenWidth = MediaQuery.of(context).size.width;
+
     return Scaffold(
       body: AnnotatedRegion<SystemUiOverlayStyle>(
         value: SystemUiOverlayStyle.light,
@@ -40,8 +43,8 @@ class SignIn extends StatelessWidget {
                 child: SingleChildScrollView(
                   physics: AlwaysScrollableScrollPhysics(),
                   padding: EdgeInsets.symmetric(
-                    horizontal: 40.0,
-                    vertical: 120.0,
+                    horizontal: _screenWidth * 0.115,
+                    vertical: _screenHeight * 0.12,
                   ),
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
@@ -51,17 +54,18 @@ class SignIn extends StatelessWidget {
                         style: TextStyle(
                           color: Colors.white,
                           fontFamily: 'OpenSans',
-                          fontSize: 30.0,
+                          fontSize: _screenWidth * 0.1,
                           fontWeight: FontWeight.bold,
                         ),
                       ),
-                      SizedBox(height: 30.0),
+                      SizedBox(height: _screenHeight * 0.05),
                       buildEmailTF(context),
-                      SizedBox(height: 30.0),
+                      SizedBox(height: _screenHeight * 0.05),
                       buildPasswordTF(context),
                       buildForgotPasswordBtn(),
                       buildSignInBtn(context),
                       buildSignInWithGoogle(context),
+                      SizedBox(height: _screenHeight * 0.045),
                       buildSignupBtn(context),
                     ],
                   ),
