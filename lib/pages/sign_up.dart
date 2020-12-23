@@ -1,13 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:trionoma/widgets/email_tf.dart';
-import 'package:trionoma/widgets/forget_password_btn.dart';
 import 'package:trionoma/widgets/password_tf.dart';
 import 'package:trionoma/widgets/register_btn.dart';
 import 'package:trionoma/widgets/signin_btn.dart';
+import 'package:trionoma/widgets/signin_instead.dart';
 import 'package:trionoma/widgets/signin_with_google.dart';
+import 'package:trionoma/widgets/signup_btn.dart';
+import 'package:trionoma/widgets/signup_with_googe.dart';
 
-class SignIn extends StatelessWidget {
+class SignUp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     var _screenHeight = MediaQuery.of(context).size.height;
@@ -61,11 +63,10 @@ class SignIn extends StatelessWidget {
                       buildEmailTF(context),
                       SizedBox(height: _screenHeight * 0.05),
                       buildPasswordTF(context),
-                      buildForgotPasswordBtn(),
-                      buildSignInBtn(context),
-                      buildSignInWithGoogle(context),
-                      SizedBox(height: _screenHeight * 0.04),
-                      buildRegisterBtn(context),
+                      buildSignUpBtn(context),
+                      buildSignUpWithGoogle(context),
+                      SizedBox(height: _screenHeight * 0.06),
+                      buildSignInInstead(context),
                     ],
                   ),
                 ),

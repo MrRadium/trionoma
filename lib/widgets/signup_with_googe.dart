@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:trionoma/widgets/google_icon.dart';
 
-Widget buildSignInWithGoogle(BuildContext context) {
+Widget buildSignUpWithGoogle(BuildContext context) {
   var _screenHeight = MediaQuery.of(context).size.height;
   var _screenWidth = MediaQuery.of(context).size.width;
   var _screenSize = MediaQuery.of(context).devicePixelRatio;
@@ -32,7 +32,7 @@ Widget buildSignInWithGoogle(BuildContext context) {
             ),
           ),
           Text(
-            "SIGN-IN WITH GOOGLE",
+            "SIGN-UP WITH GOOGLE",
             style: TextStyle(
               color: Color(0xFF5259FB),
               letterSpacing: _screenWidth * 0.000,

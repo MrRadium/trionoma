@@ -15,7 +15,7 @@ Widget buildEmailTF(BuildContext context) {
       Container(
         alignment: Alignment.centerLeft,
         decoration: kBoxDecorationStyle,
-        height: _screenHeight * 0.09,
+        height: 60.0, //_screenHeight * 0.09,
         child: TextField(
           keyboardType: TextInputType.emailAddress,
           style: TextStyle(
@@ -24,7 +24,7 @@ Widget buildEmailTF(BuildContext context) {
           ),
           decoration: InputDecoration(
             border: InputBorder.none,
-            contentPadding: EdgeInsets.only(top: _screenHeight * 0.023),
+            contentPadding: EdgeInsets.only(top: 14.0), //_screenHeight * 0.023
             prefixIcon: Icon(
               Icons.email,
               color: Colors.white,
