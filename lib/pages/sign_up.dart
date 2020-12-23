@@ -2,12 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:trionoma/widgets/email_tf.dart';
 import 'package:trionoma/widgets/password_tf.dart';
-import 'package:trionoma/widgets/register_btn.dart';
-import 'package:trionoma/widgets/signin_btn.dart';
 import 'package:trionoma/widgets/signin_instead.dart';
-import 'package:trionoma/widgets/signin_with_google.dart';
 import 'package:trionoma/widgets/signup_btn.dart';
 import 'package:trionoma/widgets/signup_with_googe.dart';
+import 'package:trionoma/widgets/username_tf.dart';
 
 class SignUp extends StatelessWidget {
   @override
@@ -51,7 +49,7 @@ class SignUp extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
                       Text(
-                        'Sign In',
+                        'Sign Up',
                         style: TextStyle(
                           color: Colors.white,
                           fontFamily: 'OpenSans',
@@ -60,12 +58,14 @@ class SignUp extends StatelessWidget {
                         ),
                       ),
                       SizedBox(height: _screenHeight * 0.05),
+                      buildUsernameTF(context),
+                      SizedBox(height: _screenHeight * 0.02),
                       buildEmailTF(context),
-                      SizedBox(height: _screenHeight * 0.05),
+                      SizedBox(height: _screenHeight * 0.02),
                       buildPasswordTF(context),
                       buildSignUpBtn(context),
                       buildSignUpWithGoogle(context),
-                      SizedBox(height: _screenHeight * 0.06),
+                      SizedBox(height: _screenHeight * 0.015),
                       buildSignInInstead(context),
                     ],
                   ),

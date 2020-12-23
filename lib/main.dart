@@ -12,7 +12,7 @@ void main() {
     MaterialApp(
       title: "Trionoma",
       debugShowCheckedModeBanner: false,
-      home: SignUp(),
+      home: SignIn(),
     ),
   );
 }

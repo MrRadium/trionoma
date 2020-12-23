@@ -14,7 +14,7 @@ Widget buildSignInWithGoogle(BuildContext context) {
       onPressed: () {
         print('Login With Google Button Pressed');
       },
-      padding: EdgeInsets.all(45 / _screenSize),
+      padding: EdgeInsets.all(40 / _screenSize),
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(_screenWidth * 0.083),
       ),
