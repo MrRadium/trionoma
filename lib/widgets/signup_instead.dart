@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 
-Widget buildRegisterBtn(BuildContext context) {
+Widget buildSignInInstead(BuildContext context) {
   var _screenWidth = MediaQuery.of(context).size.width;
   return GestureDetector(
-    onTap: () => print('Sign Up Button Pressed'),
+    onTap: () {
+      Navigator.pushReplacementNamed(context, '/SignUp');
+    },
     child: RichText(
       text: TextSpan(
         children: [

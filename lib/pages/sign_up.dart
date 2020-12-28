@@ -13,6 +13,13 @@ class SignUp extends StatelessWidget {
     var _screenHeight = MediaQuery.of(context).size.height;
     var _screenWidth = MediaQuery.of(context).size.width;
 
+    TextEditingController usernameTextEditingController =
+        new TextEditingController();
+    TextEditingController emailTextEditingController =
+        new TextEditingController();
+    TextEditingController passwordTextEditingController =
+        new TextEditingController();
+
     return Scaffold(
       body: AnnotatedRegion<SystemUiOverlayStyle>(
         value: SystemUiOverlayStyle.light,
@@ -58,11 +65,11 @@ class SignUp extends StatelessWidget {
                         ),
                       ),
                       SizedBox(height: _screenHeight * 0.05),
-                      buildUsernameTF(context),
+                      buildUsernameTF(context, usernameTextEditingController),
                       SizedBox(height: _screenHeight * 0.02),
-                      buildEmailTF(context),
+                      buildEmailTF(context, emailTextEditingController),
                       SizedBox(height: _screenHeight * 0.02),
-                      buildPasswordTF(context),
+                      buildPasswordTF(context, passwordTextEditingController),
                       buildSignUpBtn(context),
                       buildSignUpWithGoogle(context),
                       SizedBox(height: _screenHeight * 0.015),

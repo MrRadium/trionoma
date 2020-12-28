@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:trionoma/utilities/constants.dart';
 
-Widget buildUsernameTF(BuildContext context) {
+Widget buildUsernameTF(
+    BuildContext context, TextEditingController textEditingController) {
   var _screenHeight = MediaQuery.of(context).size.height;
 
   return Column(
@@ -17,6 +18,7 @@ Widget buildUsernameTF(BuildContext context) {
         decoration: kBoxDecorationStyle,
         height: 60.0, //_screenHeight * 0.09,
         child: TextField(
+          controller: textEditingController,
           keyboardType: TextInputType.name,
           style: TextStyle(
             color: Colors.white,
