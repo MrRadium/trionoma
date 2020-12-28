@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_statusbarcolor/flutter_statusbarcolor.dart';
 import 'package:trionoma/widgets/email_tf.dart';
 import 'package:trionoma/widgets/password_tf.dart';
 import 'package:trionoma/widgets/signin_instead.dart';
@@ -19,6 +20,9 @@ class SignUp extends StatelessWidget {
         new TextEditingController();
     TextEditingController passwordTextEditingController =
         new TextEditingController();
+
+    FlutterStatusbarcolor.setStatusBarColor(Color(0xFF3594DD));
+    FlutterStatusbarcolor.setNavigationBarColor(Color(0xFF5B16D0));
 
     return Scaffold(
       body: AnnotatedRegion<SystemUiOverlayStyle>(

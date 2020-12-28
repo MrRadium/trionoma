@@ -18,6 +18,7 @@ class SignIn extends StatelessWidget {
     TextEditingController b = new TextEditingController();
 
     FlutterStatusbarcolor.setStatusBarColor(Color(0xFF3594DD));
+    FlutterStatusbarcolor.setNavigationBarColor(Color(0xFF5B16D0));
 
     return Scaffold(
       body: GestureDetector(

@@ -2,7 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:trionoma/utilities/constants.dart';
 
 Widget buildUsernameTF(
-    BuildContext context, TextEditingController textEditingController) {
+  BuildContext context,
+  TextEditingController textEditingController,
+) {
   var _screenHeight = MediaQuery.of(context).size.height;
 
   return Column(
