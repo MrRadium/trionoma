@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:trionoma/utilities/validator.dart';
 
 Widget buildSignUpBtn(BuildContext context) {
   var _screenHeight = MediaQuery.of(context).size.height;
@@ -11,7 +12,7 @@ Widget buildSignUpBtn(BuildContext context) {
     child: RaisedButton(
       elevation: 5.0,
       onPressed: () {
-        print('Sign In Button Pressed');
+        signMeUp();
       },
       padding: EdgeInsets.all(45 / _screenSize),
       shape: RoundedRectangleBorder(

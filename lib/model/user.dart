@@ -1,5 +1,5 @@
-class User {
+class FireBaseUser {
   String userID;
 
-  User({this.userID});
+  FireBaseUser({this.userID});
 }

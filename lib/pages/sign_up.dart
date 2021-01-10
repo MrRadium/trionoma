@@ -1,10 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_statusbarcolor/flutter_statusbarcolor.dart';
+import 'package:trionoma/utilities/validator.dart';
 import 'package:trionoma/widgets/email_tf.dart';
 import 'package:trionoma/widgets/password_tf.dart';
 import 'package:trionoma/widgets/signin_instead.dart';
 import 'package:trionoma/widgets/signup_btn.dart';
+import 'package:trionoma/widgets/signup_email_tf.dart';
+import 'package:trionoma/widgets/signup_password_tf.dart';
 import 'package:trionoma/widgets/signup_with_googe.dart';
 import 'package:trionoma/widgets/username_tf.dart';
 
@@ -23,6 +26,8 @@ class SignUp extends StatelessWidget {
 
     FlutterStatusbarcolor.setStatusBarColor(Color(0xFF3594DD));
     FlutterStatusbarcolor.setNavigationBarColor(Color(0xFF5B16D0));
+    FlutterStatusbarcolor.setNavigationBarWhiteForeground(true);
+    FlutterStatusbarcolor.setNavigationBarWhiteForeground(true);
 
     return Scaffold(
       body: AnnotatedRegion<SystemUiOverlayStyle>(
@@ -69,11 +74,21 @@ class SignUp extends StatelessWidget {
                         ),
                       ),
                       SizedBox(height: _screenHeight * 0.05),
-                      buildUsernameTF(context, usernameTextEditingController),
-                      SizedBox(height: _screenHeight * 0.02),
-                      buildEmailTF(context, emailTextEditingController),
-                      SizedBox(height: _screenHeight * 0.02),
-                      buildPasswordTF(context, passwordTextEditingController),
+                      Form(
+                        key: formKey,
+                        child: Column(
+                          children: [
+                            buildUsernameTF(
+                                context, usernameTextEditingController),
+                            SizedBox(height: _screenHeight * 0.02),
+                            buildSignUpEmailTF(
+                                context, emailTextEditingController),
+                            SizedBox(height: _screenHeight * 0.02),
+                            buildSignUpPasswordTF(
+                                context, passwordTextEditingController),
+                          ],
+                        ),
+                      ),
                       buildSignUpBtn(context),
                       buildSignUpWithGoogle(context),
                       SizedBox(height: _screenHeight * 0.015),
